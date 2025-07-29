@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Consolidados</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style_consolidado.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-5">Soluciones a los Problemas</h1>
+        <!-- Convertidor de Moneda -->
+        <div class="card p-4 shadow-sm mb-5" id="problema1"> 
+            <h2 class="text-center mb-4">1. Conversor de Quetzales a Dólares</h2>
+            <div class="mb-3">
+                <label for="quetzalesInput" class="form-label">Ingrese la cantidad en Quetzales (Q):</label>
+                <input type="number" class="form-control" id="quetzalesInput" placeholder="Ej. 5000.00">
+            </div>
+            <button class="btn btn-primary btn-lg d-block mx-auto" id="convertirQUSDBtn">Convertir</button>
+            <h3 class="text-center mt-4" id="resultado1"></h3>
+        </div>
+        <!-- Convertidor de Metros a Kilómetros -->
+        <div class="card p-4 shadow-sm mb-5" id="problema2">
+            <h2 class="text-center mb-4">2. Conversor de Metros a Kilómetros</h2>
+            <div class="mb-3">
+                <label for="metrosInput" class="form-label">Ingrese la cantidad en metros:</label>
+                <input type="number" class="form-control" id="metrosInput" placeholder="Ej. 5000">
+            </div>
+            <button class="btn btn-success btn-lg d-block mx-auto" id="convertirMKBtn">Convertir</button>
+            <h3 class="text-center mt-4" id="resultado2"></h3>
+        </div>
+        <!-- Es positivo o Negativo -->
+        <div class="card p-4 shadow-sm mb-5" id="problema3">
+            <h2 class="text-center mb-4">3. ¿Es Positivo o Negativo?</h2>
+            <div class="mb-3">
+                <label for="numeroInput" class="form-label">Ingrese un número:</label>
+                <input type="number" class="form-control" id="numeroInput" placeholder="Ej. -5, 0, 10">
+            </div>
+            <button class="btn btn-info btn-lg d-block mx-auto" id="verificarNumBtn">Verificar</button>
+            <h3 class="text-center mt-4" id="resultado3"></h3>
+        </div>
+        <!-- Farmacia: Descuento del 10% -->
+        <div class="card p-4 shadow-sm mb-5" id="problema4">
+            <h2 class="text-center mb-4">4. Farmacia: Descuento del 10%</h2>
+            <div class="mb-3">
+                <label for="costoRemedioInput" class="form-label">Costo del medicamento (Q):</label>
+                <input type="number" class="form-control" id="costoRemedioInput" placeholder="Ej. 150.00">
+            </div>
+            <button class="btn btn-warning btn-lg d-block mx-auto" id="calcularDescuentoBtn">Calcular Descuento</button>
+            <div class="mt-4 text-center">
+                <p class="lead" id="descuentoAplicado4"></p>
+                <h3 id="precioFinal4"></h3>
+            </div>
+        </div>
+        <!-- Cálculo de Intereses Bancarios 20%  -->
+        <div class="card p-4 shadow-sm mb-5" id="problema5">
+            <h2 class="text-center mb-4">5. Cálculo de Intereses Bancarios (20%)</h2>
+            <div class="mb-3">
+                <label for="depositoInput" class="form-label">Cantidad depositada (Q):</label>
+                <input type="number" class="form-control" id="depositoInput" placeholder="Ej. 1000.00">
+            </div>
+            <button class="btn btn-success btn-lg d-block mx-auto" id="calcularInteresBtn">Calcular Interés</button>
+            <div class="mt-4 text-center">
+                <p class="lead" id="interesesGanados5"></p>
+                <h3 id="cantidadFinal5"></h3>
+            </div>
+        </div>
+        <!-- Promedio Universitario -->
+        <div class="card p-4 shadow-sm mb-5" id="problema6">
+            <h2 class="text-center mb-4">6. Calculadora de Promedio Universitario</h2>
+            <p class="text-center lead">Ingrese las 5 calificaciones (0-100%):</p>
+            <div class="mb-2">
+                <label for="nota1_parcial" class="form-label">1er Parcial (max 15 puntos):</label>
+                <input type="number" class="form-control" id="nota1_parcial" min="0" max="15">
+            </div>
+            <div class="mb-2">
+                <label for="nota2_parcial" class="form-label">2do Parcial (max 15 puntos):</label>
+                <input type="number" class="form-control" id="nota2_parcial" min="0" max="15">
+            </div>
+            <div class="mb-2">
+                <label for="nota3_actividades" class="form-label">Actividades (max 25 puntos):</label>
+                <input type="number" class="form-control" id="nota3_actividades" min="0" max="25">
+            </div>
+            <div class="mb-2">
+                <label for="nota4_proyectos" class="form-label">Proyectos (max 10 puntos):</label>
+                <input type="number" class="form-control" id="nota4_proyectos" min="0" max="10">
+            </div>
+            <div class="mb-3">
+                <label for="nota5_final" class="form-label">Examen Final (max 35 puntos):</label>
+                <input type="number" class="form-control" id="nota5_final" min="0" max="35">
+            </div>
+            <button class="btn btn-primary btn-lg d-block mx-auto" id="calcularNotaFinalBtn">Calcular Nota Final</button>
+            <div class="mt-4 text-center">
+                <h3 id="notaFinalResultado"></h3>
+                <h2 id="estadoAprobacion"></h2>
+            </div>
+        </div>
+
+    </div>
+    <script src="script_consolidado.js"></script>
+</body>
+</html>

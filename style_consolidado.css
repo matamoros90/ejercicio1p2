@@ -1,0 +1,179 @@
+/* Estilos Generales */
+body {
+    background-color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 50px; /* Espacio para el final de la página */
+}
+
+.container {
+    max-width: 800px;
+}
+
+.card {
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border: none;
+}
+
+h1 {
+    color: #343a40;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #495057;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #343a40;
+}
+
+/* Estilos Específicos para Problema 1 */
+#problema1 h2 {
+    color: #007bff;
+}
+#problema1 .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+#problema1 .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+#resultado1 {
+    color: #28a745;
+    font-weight: bold;
+}
+
+/* Estilos Específicos para Problema 2 */
+#problema2 h2 {
+    color: #17a2b8;
+}
+#problema2 .btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+#problema2 .btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+#resultado2 {
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Estilos Específicos para Problema 3 */
+#problema3 h2 {
+    color: #17a2b8;
+}
+#problema3 .btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+#problema3 .btn-info:hover {
+    background-color: #138496;
+    border-color: #117a8b;
+}
+#resultado3 {
+    font-weight: bold;
+}
+/* Colores dinámicos para el resultado del problema 3 */
+.positivo {
+    color: #28a745;
+}
+.negativo {
+    color: #dc3545;
+}
+.cero {
+    color: #6c757d;
+}
+
+/* Estilos Específicos para Problema 4 */
+#problema4 h2 {
+    color: #fd7e14;
+}
+#problema4 .btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #212529;
+}
+#problema4 .btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
+#descuentoAplicado4 {
+    color: #6c757d;
+}
+#precioFinal4 {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+/* Estilos Específicos para Problema 5 */
+#problema5 h2 {
+    color: #007bff;
+}
+#problema5 .btn-success { /* Reutilizando btn-success para diferenciar */
+    background-color: #007bff;
+    border-color: #007bff;
+}
+#problema5 .btn-success:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+#interesesGanados5 {
+    color: #6c757d;
+}
+#cantidadFinal5 {
+    color: #28a745;
+    font-weight: bold;
+}
+
+/* Estilos Específicos para Problema 6 */
+#problema6 h2 {
+    color: #6f42c1; /* Púrpura */
+}
+#problema6 .btn-primary {
+    background-color: #6f42c1;
+    border-color: #6f42c1;
+}
+#problema6 .btn-primary:hover {
+    background-color: #5a33a1;
+    border-color: #5a33a1;
+}
+#promedioResultado6 {
+    color: #343a40;
+    font-weight: bold;
+}
+#estadoAprobacion6 {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 15px;
+}
+.aprobado {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+.reprobado {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+/* Estilo para inputs inválidos (Bootstrap) */
+.form-control.is-invalid {
+    border-color: #dc3545;
+    padding-right: calc(1.5em + 0.75rem);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right calc(0.375em + 0.1875rem) center;
+    background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
