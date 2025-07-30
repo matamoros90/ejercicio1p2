@@ -4,7 +4,7 @@ body {
     backdrop-filter: blur(3px);
     color: white;
 }
-/* Card styling */
+/* cuadros o Card con fondo blur */
 .card {
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
